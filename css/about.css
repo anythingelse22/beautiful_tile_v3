@@ -136,7 +136,7 @@ header .menu_cont .navmenu li a {
   text-decoration: none;
   white-space: nowrap;
   font-family: Roboto, Montserrat, Arial;
-  font-size: 110%;
+  font-size: 100%;
   letter-spacing: 0.1px;
   transition: color 0.25s;
 }
@@ -281,31 +281,37 @@ footer {
   flex-direction: column;
   width: 80%;
   margin: auto;
-  margin-top: 10%;
+  margin-top: 5%;
   justify-content: center;
+  color: rgb(83, 83, 83);
 }
 .about_main .about_secondary .about_descr .descr_title {
   margin: auto;
   font-family: Roboto, Montserrat, Arial;
-  font-size: 25px;
-  margin-bottom: 0;
+  font-size: 27px;
+  margin-bottom: 2%;
+  font-weight: bold;
+}
+.about_main .about_secondary .about_descr .descr_inner_p {
+  margin: 2% auto;
+  font-family: "Open Sans", Roboto, Montserrat, Arial;
+  font-size: 17px;
+  text-indent: 5%;
+  color: rgb(0, 0, 0);
   font-weight: 500;
 }
-.about_main .about_secondary .about_descr .descr_p {
-  margin-top: 2%;
-  font-family: "Open Sans", Roboto, Montserrat, Arial;
-  font-size: 20px;
-  text-indent: 5%;
+.about_main .about_secondary .about_descr .descr_inner_p .about_font {
+  font-weight: 700;
 }
 @media (min-width: 550px) {
   .about_main .about_secondary .about_descr {
     width: 75%;
   }
   .about_main .about_secondary .about_descr .descr_title {
-    font-size: 30px;
+    font-size: 32px;
   }
-  .about_main .about_secondary .about_descr .descr_p {
-    font-size: 25px;
+  .about_main .about_secondary .about_descr .descr_inner_p {
+    font-size: 20px;
   }
 }
 @media (min-width: 700px) {
@@ -313,10 +319,10 @@ footer {
     width: 70%;
   }
   .about_main .about_secondary .about_descr .descr_title {
-    font-size: 30px;
+    font-size: 35px;
   }
-  .about_main .about_secondary .about_descr .descr_p {
-    font-size: 25px;
+  .about_main .about_secondary .about_descr .descr_inner_p {
+    font-size: 23px;
   }
 }
 @media (min-width: 800px) {

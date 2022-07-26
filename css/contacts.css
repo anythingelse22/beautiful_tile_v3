@@ -136,7 +136,7 @@ header .menu_cont .navmenu li a {
   text-decoration: none;
   white-space: nowrap;
   font-family: Roboto, Montserrat, Arial;
-  font-size: 110%;
+  font-size: 100%;
   letter-spacing: 0.1px;
   transition: color 0.25s;
 }
@@ -237,7 +237,6 @@ footer {
   height: 400px;
   width: 80%;
   margin: auto;
-  margin-bottom: 20%;
 }
 
 .links_panel {
@@ -269,7 +268,7 @@ hr {
   flex-direction: column;
   width: 80%;
   margin: auto;
-  margin-top: 3%;
+  margin-top: 10%;
   row-gap: 15px;
 }
 
@@ -289,10 +288,11 @@ hr {
   color: black;
   font-size: 16px;
   font-weight: 500;
+  transition: color 0.15s;
 }
 
 #email_id:hover, #phone_id:hover {
-  color: blue;
+  color: rgb(248, 148, 66);
 }
 
 @media (min-width: 500px) {
@@ -313,20 +313,47 @@ hr {
     font-size: 22px;
   }
 }
+/*descr top*/
+.contacts_descr_cont {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+  align-items: center;
+}
+.contacts_descr_cont .contacts_p {
+  margin: 0;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-family: "Open Sans", Roboto, Montserrat, Arial;
+  font-weight: 600;
+  font-size: 20px;
+}
+@media (min-width: 700px) {
+  .contacts_descr_cont .contacts_p {
+    font-size: 22px;
+  }
+}
+@media (min-width: 900px) {
+  .contacts_descr_cont .contacts_p {
+    font-size: 24px;
+  }
+}
+
 /* descr and address */
 .cont_top {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 3% auto 5% auto;
+  margin: 3% auto 10% auto;
   justify-content: space-between;
-  background-color: rgba(238, 238, 238, 0.63);
-  border: none;
 }
 
 .top_text {
   display: flex;
-  color: rgb(61, 61, 61);
+  color: rgb(2, 2, 2);
   margin: 0;
   padding: 15px 10px 5px 15px;
   flex-direction: column;
@@ -335,6 +362,7 @@ hr {
   font-size: 18px;
   font-family: Roboto, Montserrat, Arial;
   line-height: 25px;
+  font-weight: 500;
 }
 @media (min-width: 500px) {
   .top_text {

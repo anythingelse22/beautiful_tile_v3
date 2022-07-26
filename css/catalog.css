@@ -136,7 +136,7 @@ header .menu_cont .navmenu li a {
   text-decoration: none;
   white-space: nowrap;
   font-family: Roboto, Montserrat, Arial;
-  font-size: 110%;
+  font-size: 100%;
   letter-spacing: 0.1px;
   transition: color 0.25s;
 }
@@ -360,6 +360,7 @@ footer {
   width: 50%;
   padding: 2%;
   font-size: 22px;
+  font-family: Roboto, Montserrat, Arial;
   cursor: pointer;
   /*	background-color: rgba(146, 145, 145, 0.514); */
   background-color: white;
@@ -445,6 +446,7 @@ footer {
   text-align: center;
   font-size: 20px;
   font-weight: 500;
+  font-family: "Open Sans", Roboto, Montserrat, Arial;
 }
 
 /* characteristics */
@@ -460,6 +462,7 @@ footer {
 }
 
 .descr_stat_text {
+  font-family: "Open Sans", Roboto, Montserrat, Arial;
   font-size: 15px;
   margin-top: 4%;
   margin-bottom: 4%;
@@ -467,6 +470,7 @@ footer {
 
 /* description */
 .big_descr_descr {
+  font-family: "Open Sans", Roboto, Montserrat, Arial;
   text-indent: 5%;
   font-size: 17px;
 }
@@ -481,58 +485,67 @@ footer {
   }
 }
 @media (max-width: 700px), (max-height: 710px) {
+  .big_descr_main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .big_descr_left_div {
+    width: 100%;
+    height: 40%;
+  }
+  .big_descr_right_div {
+    padding: 0;
+  }
   .big_descr_name {
-    margin: 10px 0 0 0;
+    margin: 5% 0 2% 0;
+    width: 200%;
+    font-size: 20px;
   }
   .big_descr_stat_div {
-    width: 80%;
+    width: 100%;
   }
   .big_descr_descr {
-    font-size: 14px;
+    margin-top: 10px;
+    width: 150%;
+    font-size: 16px;
   }
 }
 @media (max-width: 600px), (max-height: 650px) {
-  .big_descr_right_div {
-    row-gap: 3%;
-    /*	padding-top: 1%; */
-  }
-  .big_descr_name {
-    margin: 5px 0 0 0;
-    font-size: 18px;
-  }
   .big_descr_stat_div {
-    width: 95%;
-  }
-  .descr_stat_text {
-    font-size: 13px;
-    margin: 3px 0;
+    width: 110%;
   }
   .big_descr_descr {
-    font-size: 13px;
+    width: 160%;
+    font-size: 15px;
   }
 }
 @media (max-width: 480px), (max-height: 600px) {
   .big_descr_name {
-    font-size: 16px;
+    font-size: 19px;
   }
-  .descr_stat_text {
-    font-size: 13px;
-    margin: 2px 0;
+  .big_descr_stat_div {
+    width: 125%;
   }
   .big_descr_descr {
-    font-size: 11px;
-    line-height: 17px;
+    width: 170%;
+    font-size: 14px;
+  }
+  .descr_stat_text {
+    font-size: 14px;
   }
 }
 @media (max-width: 400px), (max-height: 550px) {
   .big_descr_name {
-    font-size: 15px;
+    font-size: 18px;
   }
-  .descr_stat_text {
-    font-size: 12px;
+  .big_descr_stat_div {
+    width: 150%;
   }
   .big_descr_descr {
-    font-size: 11px;
-    line-height: 17px;
+    width: 180%;
+    font-size: 14px;
+  }
+  .descr_stat_text {
+    font-size: 13px;
   }
 }/*# sourceMappingURL=catalog.css.map */

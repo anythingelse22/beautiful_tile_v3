@@ -136,7 +136,7 @@ header .menu_cont .navmenu li a {
   text-decoration: none;
   white-space: nowrap;
   font-family: Roboto, Montserrat, Arial;
-  font-size: 110%;
+  font-size: 100%;
   letter-spacing: 0.1px;
   transition: color 0.25s;
 }
@@ -232,8 +232,7 @@ footer {
 .home_cont {
   display: flex;
   width: 100%;
-  height: 500px;
-  margin: 10% auto 15% auto;
+  margin: 10% auto 0 auto;
 }
 .home_cont .home_text {
   margin: auto;
@@ -246,14 +245,6 @@ footer {
   font-size: 30px;
   font-weight: bold;
   color: rgb(105, 105, 105);
-}
-.home_cont .home_text hr {
-  width: 80%;
-  margin: auto;
-  border: 0;
-  height: 3px;
-  background: rgb(248, 129, 32);
-  border-radius: 15px;
 }
 .home_cont .home_text_descr {
   width: 80%;
@@ -278,6 +269,7 @@ footer {
     font-size: 40px;
   }
   .home_cont .home_text .home_text_descr {
+    width: 60%;
     font-size: 30px;
   }
 }
@@ -287,5 +279,167 @@ footer {
   }
   .home_cont .home_text .home_text_descr {
     font-size: 35px;
+  }
+}
+
+hr {
+  width: 80%;
+  margin: 10% auto;
+  border: 0;
+  height: 3px;
+  background: rgb(248, 129, 32);
+  border-radius: 15px;
+}
+
+.service_main_cont {
+  display: flex;
+  margin: auto;
+  width: 95%;
+  justify-content: space-between;
+}
+.service_main_cont .service_cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  box-sizing: content-box;
+}
+.service_main_cont .service_cont .serv_img {
+  width: 50px;
+  height: 50px;
+}
+.service_main_cont .service_cont .serv_name {
+  margin: 0;
+  margin-top: 10px;
+  font-family: Roboto, Montserrat, Arial;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.service_main_cont .service_cont .serv_descr {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-family: "Open Sans", Roboto, Montserrat, Arial;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 500;
+}
+.service_main_cont .service_cont .serv_link {
+  margin-top: 5px;
+  font-family: Roboto, Montserrat, Arial;
+  font-size: 17px;
+  color: rgb(78, 78, 78);
+  transition: color 0.15s;
+}
+.service_main_cont .service_cont .serv_link:hover {
+  color: rgb(248, 148, 66);
+}
+@media (max-width: 500px) {
+  .service_main_cont {
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service_main_cont .service_cont {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  .service_main_cont .service_cont #truck_id {
+    margin-top: 0px;
+  }
+  .service_main_cont .service_cont .serv_descr {
+    font-weight: 500;
+  }
+  .service_main_cont .service_cont .serv_link {
+    font-size: 17px;
+  }
+}
+@media (min-width: 900px) {
+  .service_main_cont {
+    width: 80%;
+  }
+  .service_main_cont .service_cont .serv_img {
+    width: 100px;
+    height: 100px;
+  }
+  .service_main_cont .service_cont .serv_name {
+    font-size: 23px;
+  }
+  .service_main_cont .service_cont .serv_descr {
+    font-size: 20px;
+  }
+  .service_main_cont .service_cont .serv_link {
+    font-size: 19px;
+  }
+}
+
+.example_main_cont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 15%;
+}
+.example_main_cont .examples_title {
+  text-align: center;
+  font-family: "Open Sans", Roboto, Montserrat, Arial;
+  font-weight: 700;
+  font-size: 20px;
+  color: rgb(87, 87, 87);
+}
+.example_main_cont .example_img_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.example_main_cont .example_img_grid .ex_img_cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.example_main_cont .example_img_grid .ex_img_cont .ex_img {
+  /*		width: 150px;	*/
+  /*		height: 150px;	*/
+  width: 90%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: solid;
+  border-width: 3px;
+  border-color: rgba(94, 94, 94, 0.225);
+  transition: border-color 0.25s, transform 0.3s ease-in-out;
+  /*
+  @media (min-width: 500px) {
+  	width: 220px;
+  	height: 180px;
+  }
+
+  @media (min-width: 700px) {
+  	width: 300px;
+  	height: 230px;
+  }
+
+  @media (min-width: 900px) {
+  	width: 390px;
+  	height: 280px;
+  }
+
+  @media (min-width: 1100px) {
+  	width: 500px;
+  	height: 350px;
+  }
+  */
+}
+.example_main_cont .example_img_grid .ex_img_cont .ex_img:hover {
+  border-color: rgba(94, 94, 94, 0.705);
+}
+@media (min-width: 350px) {
+  .example_main_cont {
+    width: 90%;
   }
 }/*# sourceMappingURL=index.css.map */
